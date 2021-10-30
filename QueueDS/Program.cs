@@ -13,6 +13,9 @@ namespace QueueDS
             queue.Enqueue(70);
             Console.WriteLine("the Queue list is:");
             queue.Display();
+            queue.Dequeue();
+            Console.WriteLine("the Deueue list is:");
+            queue.Display();
         }
     }
 }

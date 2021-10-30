@@ -36,6 +36,24 @@ namespace QueueDS
         }
 
         /// <summary>
+        /// Dequeues the elements form Queue.
+        /// </summary>
+        public void Dequeue()
+        {
+            Node temp = this.head;
+            if (temp == null)
+            {
+                Console.WriteLine("no elements present ");
+                return;
+            }
+            this.head = temp.next;
+            temp = null;
+
+        }
+
+
+
+        /// <summary>
         /// Displays this queue values.
         /// </summary>
         public void Display()
